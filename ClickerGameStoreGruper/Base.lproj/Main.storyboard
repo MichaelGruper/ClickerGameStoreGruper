@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClickerGameStoreGruper" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lick" translatesAutoresizingMaskIntoConstraints="NO" id="ggd-wp-vX3">
-                                <rect key="frame" x="76" y="272" width="240" height="128"/>
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -26,28 +26,32 @@
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Licks: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkI-Rh-OI9">
-                                <rect key="frame" x="103" y="119" width="187" height="73"/>
+                                <rect key="frame" x="103" y="247" width="187" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-eC-apI">
+                                <rect key="frame" x="124" y="602" width="110" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Vxn-oj-T8e">
+                                <rect key="frame" x="141" y="144" width="110" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="👅Shop👅">
+                                    <color key="baseForegroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Xdl-Fz-NRb" kind="show" identifier="shopSegue" id="vaF-Yz-D4r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3Ny-17-hQS">
-                        <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Vxn-oj-T8e">
-                            <rect key="frame" x="141.66666666666666" y="5" width="109.66666666666666" height="34.333333333333336"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="👅Shop👅"/>
-                            <connections>
-                                <segue destination="Xdl-Fz-NRb" kind="show" identifier="shopSegue" id="vaF-Yz-D4r"/>
-                            </connections>
-                        </button>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Home" id="3Ny-17-hQS"/>
                     <connections>
                         <outlet property="licksLabelOutlet" destination="EkI-Rh-OI9" id="h7B-sp-s7J"/>
                         <outlet property="tongueImageViewOutlet" destination="ggd-wp-vX3" id="chr-Rs-tla"/>
@@ -62,7 +66,7 @@
             </objects>
             <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
         </scene>
-        <!--Shop View Controller-->
+        <!--Shop-->
         <scene sceneID="wqa-yN-Rdg">
             <objects>
                 <viewController id="Xdl-Fz-NRb" customClass="ShopViewController" customModule="ClickerGameStoreGruper" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,11 +74,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fSR-Wp-JPC">
-                                <rect key="frame" x="75" y="327" width="129.33333333333334" height="239"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fSR-Wp-JPC">
+                                <rect key="frame" x="75.000000000000014" y="326" width="129.33333333333337" height="240"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ba-AA-P5x">
-                                        <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="34.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ba-AA-P5x">
+                                        <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="35.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="+5 Per Click">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,14 +88,14 @@
                                             <action selector="plus5ButtonAction:" destination="Xdl-Fz-NRb" eventType="touchUpInside" id="K5d-mC-PRo"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 250 Licks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afN-89-1jE">
-                                        <rect key="frame" x="0.0" y="49.333333333333336" width="129.33333333333334" height="20.333333333333336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cost: 250 Licks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afN-89-1jE">
+                                        <rect key="frame" x="0.0" y="50.333333333333314" width="129.33333333333334" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-FD-e2o">
-                                        <rect key="frame" x="0.0" y="84.666666666666671" width="129.33333333333334" height="34.333333333333329"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-FD-e2o">
+                                        <rect key="frame" x="0.0" y="85.666666666666686" width="129.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="+10 Per Click">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -101,14 +105,14 @@
                                             <action selector="plus10ButtonAction:" destination="Xdl-Fz-NRb" eventType="touchUpInside" id="mh6-2Z-qPz"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 500 Licks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfx-s0-fPl">
-                                        <rect key="frame" x="0.0" y="134" width="129.33333333333334" height="20.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cost: 500 Licks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfx-s0-fPl">
+                                        <rect key="frame" x="0.0" y="135" width="129.33333333333334" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOT-UK-eFX">
-                                        <rect key="frame" x="0.0" y="169.33333333333334" width="129.33333333333334" height="34.333333333333343"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOT-UK-eFX">
+                                        <rect key="frame" x="0.0" y="170.33333333333331" width="129.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="+25 Per Click">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -118,8 +122,32 @@
                                             <action selector="plus25ButtonAction:" destination="Xdl-Fz-NRb" eventType="touchUpInside" id="odu-NX-OCa"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 1,250 Licks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1h-Bw-3ZI">
-                                        <rect key="frame" x="0.0" y="218.66666666666666" width="129.33333333333334" height="20.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost: 1,250 Licks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1h-Bw-3ZI">
+                                        <rect key="frame" x="0.0" y="219.66666666666663" width="129.33333333333334" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the 👅Shop👅" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHZ-EK-BXa">
+                                <rect key="frame" x="31" y="103" width="330" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXr-fh-QtM">
+                                <rect key="frame" x="89" y="271" width="215" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Ge-o0-vrg">
+                                <rect key="frame" x="291" y="416" width="41.333333333333314" height="20.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-P8-BsK">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -130,12 +158,31 @@
                         <viewLayoutGuide key="safeArea" id="tDq-FV-5u5"/>
                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="8Ge-o0-vrg" firstAttribute="leading" secondItem="fSR-Wp-JPC" secondAttribute="trailing" constant="89.670000000000002" id="7hg-wL-IMH"/>
+                            <constraint firstItem="8Ge-o0-vrg" firstAttribute="top" secondItem="lXr-fh-QtM" secondAttribute="bottom" constant="99" id="Oho-pW-gvN"/>
+                            <constraint firstItem="fSR-Wp-JPC" firstAttribute="leading" secondItem="tDq-FV-5u5" secondAttribute="leading" constant="75" id="PXb-Ap-uNZ"/>
+                            <constraint firstItem="fSR-Wp-JPC" firstAttribute="top" secondItem="lXr-fh-QtM" secondAttribute="bottom" constant="19" id="UoP-RG-A8K"/>
+                            <constraint firstItem="tDq-FV-5u5" firstAttribute="trailing" secondItem="fSR-Wp-JPC" secondAttribute="trailing" constant="188.66999999999999" id="ih7-7C-TaQ"/>
+                            <constraint firstItem="tDq-FV-5u5" firstAttribute="bottom" secondItem="fSR-Wp-JPC" secondAttribute="bottom" constant="252" id="nH1-sA-6iF"/>
+                            <constraint firstItem="tDq-FV-5u5" firstAttribute="bottom" secondItem="8Ge-o0-vrg" secondAttribute="bottom" constant="391.67000000000002" id="nb5-nX-Rpe"/>
+                            <constraint firstItem="tDq-FV-5u5" firstAttribute="trailing" secondItem="8Ge-o0-vrg" secondAttribute="trailing" constant="57.670000000000002" id="w7a-rB-e6B"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pVI-RQ-sUc"/>
+                    <navigationItem key="navigationItem" title="Shop" id="pVI-RQ-sUc">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="mhJ-O1-bLw"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="errorLabelOutlet" destination="lXr-fh-QtM" id="fCn-X0-jin"/>
+                        <outlet property="licksCountLabelOutlet" destination="vhE-P8-BsK" id="4Gp-Ub-OlK"/>
+                        <outlet property="plusfiveLabelOutlet" destination="afN-89-1jE" id="ffM-FT-VtH"/>
+                        <outlet property="plustenLabelOutlet" destination="Kfx-s0-fPl" id="2QH-tg-oD2"/>
+                        <outlet property="plustwofiveLabelOutlet" destination="N1h-Bw-3ZI" id="Lbj-NS-e2N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3P-F4-PQX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1874" y="4"/>
+            <point key="canvasLocation" x="1872.5190839694656" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i9D-9A-ccp">
