@@ -27,12 +27,13 @@ class ShopViewController: UIViewController {
             AppData.scale += 5
             AppData.licks -= AppData.fivePrice
             AppData.fivePrice += 250
-            AppData.tenPrice += 250
-            AppData.twofivePrice += 250
+            AppData.tenPrice += 500
+            AppData.twofivePrice += 1250
             plusfiveLabelOutlet.text = "Cost: \(Int(AppData.fivePrice)) Licks"
             plustenLabelOutlet.text = "Cost: \(Int(AppData.tenPrice)) Licks"
             plustwofiveLabelOutlet.text = "Cost: \(Int(AppData.twofivePrice)) Licks"
             errorLabelOutlet.isHidden = true
+            licksCountLabelOutlet.text = "You have \(Int(AppData.licks)) Licks"
         }
         else{
             errorLabelOutlet.isHidden = false
@@ -45,12 +46,13 @@ class ShopViewController: UIViewController {
             AppData.scale += 10
             AppData.licks -= AppData.tenPrice
             AppData.fivePrice += 500
-            AppData.tenPrice += 500
-            AppData.twofivePrice += 500
+            AppData.tenPrice += 1000
+            AppData.twofivePrice += 2500
             plusfiveLabelOutlet.text = "Cost: \(Int(AppData.fivePrice)) Licks"
             plustenLabelOutlet.text = "Cost: \(Int(AppData.tenPrice)) Licks"
             plustwofiveLabelOutlet.text = "Cost: \(Int(AppData.twofivePrice)) Licks"
             errorLabelOutlet.isHidden = true
+            licksCountLabelOutlet.text = "You have \(Int(AppData.licks)) Licks"
         }
         else{
             errorLabelOutlet.isHidden = false
@@ -62,13 +64,14 @@ class ShopViewController: UIViewController {
         if AppData.licks >= AppData.twofivePrice{
             AppData.scale += 25
             AppData.licks -= AppData.twofivePrice
-            AppData.fivePrice += 1000
-            AppData.tenPrice += 1000
-            AppData.twofivePrice += 1250
+            AppData.fivePrice += 625
+            AppData.tenPrice += 1250
+            AppData.twofivePrice += 3125
             plusfiveLabelOutlet.text = "Cost: \(Int(AppData.fivePrice)) Licks"
             plustenLabelOutlet.text = "Cost: \(Int(AppData.tenPrice)) Licks"
             plustwofiveLabelOutlet.text = "Cost: \(Int(AppData.twofivePrice)) Licks"
             errorLabelOutlet.isHidden = true
+            licksCountLabelOutlet.text = "You have \(Int(AppData.licks)) Licks"
         }
         else{
             errorLabelOutlet.isHidden = false
